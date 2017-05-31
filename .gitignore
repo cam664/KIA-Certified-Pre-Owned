@@ -1,0 +1,19 @@
+###############
+# Directories #
+###############
+node_modules/
+.idea/
+.vscode/
+build/css/
+build/js/
+build/maps/
+build/img/
+######################
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+*.orig

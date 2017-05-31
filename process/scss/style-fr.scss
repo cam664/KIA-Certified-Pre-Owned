@@ -1,0 +1,1069 @@
+@font-face {
+   font-family: DesignKOTFB;
+   src: url('../fonts/DesignKOTFB.ttf'), url('../fonts/designkb-webfont.eot');
+}
+
+@font-face {
+   font-family: DesignKOTFL;
+   src: url('../fonts/DesignKOTFL.ttf'), url('../fonts/designkl-webfont.eot');
+}
+
+@font-face {
+   font-family: DesignKOTFM;
+   src: url('../fonts/DesignKOTFM.ttf'), url('../fonts/designkm-webfont.eot');
+}
+
+$red: #d02630;
+$mh-black: #221e1f;
+$h-grey: #5e5f61;
+$sh-grey: #828282;
+$c-grey: #9f9f9f;
+
+html {
+   font-size: 10px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+   position: relative;
+}
+
+main {
+   width: 100%;
+   max-width: 1024px;
+   margin: 0 auto;
+   background-color: #fff;
+}
+
+hr {
+   border: none;
+   border-top: 1px solid transparentize($c-grey, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+   margin: 0;
+}
+
+h1, h2, h3 {
+   text-transform: uppercase;
+}
+
+h1 {
+   font-family: 'DesignKOTFL';
+   font-weight: 300;
+   font-size: 5rem;
+   color: $mh-black;
+   background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 85%, rgba(255, 255, 255, 0));
+}
+
+h2 {
+   font-family: 'DesignKOTFM';
+   font-weight: 500;
+   font-size: 3.3rem;
+   color: $h-grey;
+   margin: 0 0 20px 0;
+}
+
+h3 {
+   font-family: 'DesignKOTFM';
+   font-weight: 500;
+   font-size: 2.8rem;
+   color: $red;
+   margin: 20px 0 25px 0;
+}
+
+h4 {
+   font-family: "DesignKOTFM";
+   font-weight: 500;
+   font-size: 2rem;
+   color: $c-grey;
+}
+
+p {
+   color: $c-grey;
+   font-family: "DesignKOTFL";
+   font-size: 1.8rem;
+   font-weight: 300;
+   line-height: 23.5px;
+}
+
+a {
+   text-decoration: none;
+}
+
+section {
+   padding: 45px 55px;
+   @media(max-width: 1010px) {
+      padding: 8% 5%;
+   }
+}
+
+.french {
+    float: right;
+    text-decoration: none;
+    color: #464646;
+    display: inline-block;
+    font-family: "DesignKOTFM";
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 4px;
+    @media(max-width: 534px) {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 85%, rgba(255, 255, 255, 0.6));
+        padding-right: 15px;
+   }
+}
+/*legend for histograms*/
+.legend {
+   list-style: none;
+   padding: 0;
+   li {
+      font-family: 'DesignKOTFM';
+      font-weight: 500;
+      color: $red;
+      display: inline-flex;
+      align-items: center;
+      margin: 11px 15px 0 0;
+      font-size: 1.6rem;
+      span {
+         margin-left: 3px;
+         color: $c-grey;
+      }
+   }
+}
+
+.bar-swatch-red {
+   width: 15px;
+   height: 15px;
+   background-color: $red;
+   border-radius: 4px;
+   margin-right: 5px;
+   display: inline-block;
+}
+
+.bar-swatch-lightgrey {
+   @extend .bar-swatch-red;
+   background-color: #d9d9d9;
+}
+
+.bar-swatch-grey {
+   @extend .bar-swatch-red;
+   background-color: #a8a8a8;
+}
+
+.bar-swatch-darkgrey {
+   @extend .bar-swatch-red;
+   background-color: #797979;
+}
+
+.bar-swatch-darkergrey {
+    @extend .bar-swatch-red;
+    background-color: #595959;
+}
+/***************/
+
+.carproof {
+   width: 90px;
+   position: relative;
+   top: 4px;
+}
+
+.red-border {
+   border: 1px solid $red;
+}
+
+.top-rank-num {
+   border: 2px solid #d9d9d9;
+   width: 50px;
+   height: 100%;
+   font-family: 'DESIGNKOTFM';
+   font-weight: 500;
+   color: $sh-grey;
+   font-size: 3rem;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 15px;
+}
+
+.top-title {
+   @extend .top-rank-num;
+   border: 1px solid #d9d9d9;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.11);
+   font-size: 1.5rem;
+   flex-grow: 1;
+   margin-left: 15px;
+}
+
+.img-float-left {
+   float: left;
+   width: 290px;
+   padding: 0 25px 10px 0;
+   @media(max-width: 534px) {
+      padding: 0 10px 10px 0;
+   }
+}
+
+.no-margin {
+   margin-right: 0;
+}
+
+.img-ted {
+   width: auto;
+   height: auto;
+   @media(max-width: 534px) {
+      width: 40%;
+   }
+}
+
+.btn {
+   width: 72px;
+   height: 31px;
+   cursor: pointer;
+   border: none;
+   border-radius: 2px;
+   color: #fff;
+   font-family: "DesignKOTFM";
+   font-size: 1.4rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   background-color: $red;
+   text-align: center;
+   padding-top: 7px;
+   margin-top: 5px;
+   box-sizing: border-box;
+   @media(max-width: 534px) {
+       margin-top: 25px;
+   }
+}
+
+#btn-totop {
+   background-color: $red;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 4px 8px rgba(25, 25, 25, 0.5);
+   z-index: 5;
+   transition: all 0.2s ease-in-out;
+   &:active {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      transform: translate(0, 2px);
+   }
+   @media(max-width: 1010px) {
+      width: 40px;
+      height: 40px;
+      right: 20px;
+      bottom: 20px;
+   }
+   &:after {
+      content: 'RETOURNER EN HAUT';
+      position: absolute;
+      width: 275px;
+      text-shadow: 0 2px 5px rgba(25, 25, 25, 0.5);
+      color: $red;
+      font-family: "DesignKOTFM";
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      transform: translate(30px, 0);
+      opacity: 0;
+      transition: all 0.2s ease-out;
+      z-index: -1;
+      left: -135px;
+   }
+   &:hover:after {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+   .arrow {
+      position: relative;
+      background: #fff;
+      width: 23px;
+      height: 3px;
+      border-radius: 2px;
+      top: -2px;
+      &.arrow-left {
+         transform: rotate(-50deg);
+         left: 5px;
+         @media(max-width: 1010px) {
+            left: 4px;
+         }
+      }
+      &.arrow-right {
+         transform: rotate(50deg);
+         right: 5px;
+         @media(max-width: 1010px) {
+            right: 4px;
+         }
+      }
+   }
+}
+
+.light {
+   font-family: 'DesignKOTFL';
+   font-weight: 300;
+}
+
+header {
+   height: 290px;
+   box-sizing: border-box;
+   position: relative;
+   background-image: url('../img/hero.jpg');
+   background-size: 1024px 291px;
+   background-repeat: no-repeat;
+   padding: 25px 75px 35px 45px;
+   border-bottom: 8px solid $red;
+   margin: 0 auto;
+   @media(max-width: 740px) {
+      padding: 5% 5%;
+   }
+   @media(max-width: 534px) {
+      padding: 5% 0 0 5%;
+   }
+   h1 {
+      float: right;
+      margin: 0;
+      padding-left: 5px;
+      @media(max-width: 1040px) {
+         font-size: 3.5rem;
+         background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 85%, rgba(255, 255, 255, 0));
+      }
+      @media(max-width: 655px) {
+         font-size: 2.5rem;
+         width: 100%;
+      }
+   }
+}
+
+.date {
+   font-size: 1.8rem;
+   font-family: 'DesignKOTFL';
+   font-weight: 300;
+   text-transform: uppercase;
+   display: inline-block;
+   color: $h-grey;
+}
+
+.logo-wrapper {
+   float: right;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 435px;
+   margin: 30px 0 10px 100%;
+   @media(max-width: 740px) {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 85%, rgba(255, 255, 255, 0));
+      padding: 5px 0 5px 5px;
+   }
+   @media(max-width: 534px) {
+      margin: 15px 0 5px 100%;
+      width: 100%;
+      justify-content: flex-start;
+   }
+   img {
+      width: 66px;
+      height: 33px;
+   }
+   span {
+      display: inline-block;
+      height: 37px;
+      width: 2px;
+      background-color: #979797;
+      @media(max-width: 534px) {
+         margin: 0 10px;
+      }
+   }
+   h2 {
+      display: inline-block;
+      font-size: 2.2rem;
+      margin: 0;
+   }
+}
+
+.sells-wrapper {
+   position: absolute;
+   height: 130px;
+   width: 195px;
+   bottom: -55px;
+   right: 75px;
+   padding-left: 4px;
+   @media(max-width: 534px) {
+      transform: translate(-50%, 0);
+      left: 50%;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0));
+   }
+   h3 {
+      color: $h-grey;
+      font-family: 'DesignKOTFL';
+      text-align: center;
+      font-size: 1.91rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 3px;
+      margin-left: -5px;
+   }
+   p {
+      color: $h-grey;
+      font-family: "DesignKOTFL";
+      font-size: 1.137rem;
+      font-weight: 300;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.4;
+      margin-top: 3px;
+      margin-bottom: 5px;
+      margin-left: -6px;
+   }
+}
+
+.sells-num {
+   font-family: 'DesignKOTFM';
+   font-weight: 500;
+   display: inline-flex;
+   align-items: center;
+   box-sizing: border-box;
+   padding-bottom: 4px;
+   justify-content: space-around;
+   color: #fff;
+   font-size: 6.5rem;
+   width: 46px;
+   height: 69px;
+   background-image: linear-gradient(180deg, #53565a 0%, #cbccce 49%, #333437 100%);
+}
+
+#news {
+   padding-top: 100px;
+   @media(max-width: 740px) {
+      padding-top: 13%;
+   }
+   @media(max-width: 534px) {
+      padding-top: 35%;
+   }
+   h4 {
+      @extend h3;
+      font-family: "DesignKOTFB";
+      font-size: 1.8rem;
+      font-weight: 700;
+   }
+   p {
+      margin: 15px 0;
+      text-align: justify;
+      @media(max-width: 534px) {
+         text-align: left;
+      }
+   }
+   .sig-ted {
+      position: relative;
+      right: 25px;
+   }
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   padding: 0;
+   margin-top: 45px;
+   @media(max-width: 534px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   a {
+      max-width: 130px;
+      text-align: center;
+      text-decoration: none;
+      img {
+         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+         &:hover {
+            transform: translate(0, -2px);
+            filter: drop-shadow(0 5px 5px rgba(35, 35, 35, 0.5));
+         }
+         &:active {
+            transform: translate(0, 0);
+            filter: drop-shadow(0 0 0 rgba(35, 35, 35, 0));
+         }
+      }
+      h4 {
+         font-family: 'DesignKOTFM' !important;
+         font-weight: 500 !important;
+      }
+      @media(max-width: 534px) {
+         width: 45%;
+         max-width: 100%;
+         img {
+            width: 43%;
+         }
+      }
+   }
+}
+
+#analytics {
+   h3 {
+      margin-top: 50px;
+      &:first-of-type {
+         margin-top: 20px;
+      }
+   }
+}
+
+.shrink {
+   font-size: 2.2rem;
+}
+
+.top-viewed-container {
+   display: flex;
+   justify-content: space-between; //min-height: 460px;
+   margin-top: 50px;
+   @media(max-width: 1010px) {
+      flex-direction: column;
+      min-height: 560px;
+   }
+}
+
+.top-viewed-wrapper {
+   width: 47%;
+   display: inline-block; //min-height: 350px;
+   @media(max-width: 1010px) {
+      display: block;
+      width: 100%;
+   }
+   ul {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      li {
+         display: flex;
+         align-items: center;
+         margin-bottom: 15px;
+         div {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 20px;
+            flex-grow: 1;
+            height: 50px;
+            color: $h-grey;
+            font-family: "DesignKOTFM";
+            font-size: 1.6rem;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.11);
+         }
+      }
+      img {
+         margin-right: 15px;
+         width: 94px;
+         height: 50px;
+      }
+   }
+}
+
+.inline {
+   display: inline-block;
+}
+
+#analytics .row {
+   display: flex;
+   align-items: center;
+   margin: 30px 0;
+}
+
+.push-margin {
+   margin: 0 40px 0 20px;
+}
+
+.donut-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   position: relative;
+   @media(max-width: 840px) {
+      justify-content: center;
+      margin-top: 220px;
+   }
+   .legend {
+      position: relative;
+      top: -35px;
+      text-align: center;
+      li {
+         display: block;
+      }
+      span {
+         color: $c-grey;
+      }
+   }
+}
+
+.donut-wrapper {
+   max-width: 360px;
+   margin-top: 20px;
+   &:nth-child(odd) {
+      text-align: right;
+   }
+   @media(max-width: 980px) {
+      max-width: 100%;
+      &:nth-child(odd) {
+         text-align: center;
+      }
+   }
+   &:last-of-type {
+      margin-bottom: 30px;
+   }
+}
+
+.chart {
+   box-shadow: 0 1px 5px rgba(110, 110, 110, 0.2);
+   box-sizing: content-box;
+   border-radius: 5px;
+   padding: 1px;
+   position: relative
+}
+
+.benefits-oil-container {
+   display: flex;
+   justify-content: space-between;
+   @media(min-width: 1024px) {
+      margin-bottom: 13px;
+   }
+}
+
+.benefits-num-wrapper {
+   display: inline-flex;
+   min-width: 110px;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.benefits-copy-wrapper {
+   display: inline-flex;
+   flex-grow: 1;
+   min-height: 130px;
+   flex-direction: column;
+   margin-left: 5px;
+   justify-content: space-between;
+   position: relative;
+   top: -2px;
+   p {
+      margin: 0 !important;
+      //font-size: 1.6rem;
+      &:not(:first-of-type) {
+         margin: 5px 0 0 0 !important;
+      }
+   }
+}
+
+.benefits-num {
+   @extend h3;
+   font-size: 2rem;
+   margin: 10px 0 0 0;
+   display: inline-block;
+   &:nth-of-type(2) {
+      position: relative;
+      top: 6px;
+   }
+   &.num-graduation {
+      display: block;
+      margin: 10px auto;
+      left: 5px;
+      bottom: 5px;
+      font-size: 3.3rem;
+      position: absolute;
+   }
+}
+
+.benefits {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+   li {
+      position: relative;
+      width: 49%;
+      box-sizing: border-box;
+      margin-bottom: 45px;
+      padding: 0 5px;
+      &:nth-child(4) {
+         min-height: 155px;
+      }
+      @media(max-width: 534px) {
+         width: 100%;
+      }
+      h4, p, a {
+         margin-bottom: 15px;
+      }
+      h4 {
+         display: inline-flex;
+         align-items: center;
+         img {
+            margin-right: 8px;
+         }
+      }
+   }
+   a {
+      color: $red;
+      font-family: "DesignKOTFM";
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+   }
+}
+
+.partners {
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+   padding: 0;
+   margin-top: 35px;
+   @media(max-width: 534px) {
+      flex-direction: column;
+   }
+   li {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 240px;
+      padding: 0 5px;
+      @media(max-width: 875px) {
+         max-width: 100%;
+         margin-bottom: 50px;
+         height: auto;
+      }
+      p {
+         text-align: center;
+         margin-bottom: 35px;
+      }
+      img {
+         max-width: 90%; //margin-bottom: 35px;
+         margin-bottom: 0;
+      }
+      @media(min-width: 534px) {
+         &:nth-child(3) img {
+            position: relative;
+            bottom: 12px;
+         }
+         &:nth-child(3) p {
+            position: relative;
+            bottom: 22px;
+         }
+      }
+   }
+}
+
+#stats {
+   position: relative;
+   h3 {
+      margin-top: 50px;
+      &:first-of-type {
+         margin-top: 20px;
+      }
+   }
+}
+
+.sales-totals-wrapper {
+   width: 221px;
+   height: 70px;
+   display: inline-flex;
+   box-sizing: border-box;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   border: 2px solid $red;
+   border-radius: 8px;
+   position: absolute;
+   margin: 0 auto;
+   padding: 5px 0;
+   top: 380px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   @media(max-width: 840px) {
+      top: -90px;
+   }
+   h3 {
+      font-size: 2rem;
+      margin: 0 !important;
+   }
+   h4 {
+      position: absolute;
+      bottom: 70px;
+      width: 100%;
+      text-align: center;
+   }
+}   
+
+.banks-legend {
+   display: none;
+   @media(max-width: 534px) {
+      display: flex;
+      align-items: center;
+      img {
+         width: 80px;
+      }
+      div {
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         margin-left: 20px;
+         border-radius: 3px;
+         &:first-of-type {
+            margin-left: 0;
+         }
+      }
+      h4 {
+         display: inline-block;
+         margin: 0 6px;
+      }
+   }
+}
+
+@media(max-width: 534px) {
+   .bg-bmo {
+      background-color: #017bc4;
+   }
+   .bg-td {
+      background-color: #53b947;
+   }
+}
+
+#finance {
+   p {
+      margin-top: 30px;
+   }
+   .container {
+      margin-top: 10px;
+      display: flex;
+      border-bottom: 1px solid #979797;
+      padding-bottom: 10px;
+      border-radius: 3px;
+      @media(max-width: 534px) {
+         padding: 5px;
+         border-bottom: none;
+      }
+      &:first-of-type {
+         padding-bottom: 15px;
+      }
+   }
+   .img-wrapper {
+      min-width: 250px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      @media(max-width: 700px) {
+         min-width: 100px;
+         margin-right: 10px;
+         img {
+            width: 80%;
+         }
+      }
+      @media(max-width: 534px) {
+         display: none;
+      }
+   }
+   .row {
+      display: inline-flex;
+      width: 100%;
+      justify-content: space-between;
+      list-style: none;
+      color: $h-grey;
+      font-family: "DesignKOTFL";
+      font-size: 1.4rem;
+      font-weight: 300;
+      padding: 0;
+      margin: 15px 0 0 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #979797;
+      @media(max-width: 534px) {
+         font-family: "DesignKOTFM";
+         font-weight: 400;
+         color: lighten($h-grey, 60);
+         border-bottom: 1px solid lighten(#979797, 15);
+         font-size: 1.1rem;
+      }
+      &.no-border {
+         border: none;
+         padding-bottom: none;
+      }
+      li {
+         min-width: 65px;
+         @media(max-width: 826px) {
+            min-width: 50px;
+            text-align: right;
+         }
+         @media(max-width: 534px) {
+            min-width: 35px;
+         }
+         &:first-of-type {
+            margin-right: 10px;
+            min-width: 65px;
+            text-align: left;
+            @media(max-width: 534px) {
+               margin-right: 3px;
+               min-width: 55px;
+            }
+         }
+      }
+   }
+   .row.row-main {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 0 0;
+      padding-bottom: 0;
+      border: none;
+      font-family: "DesignKOTFL";
+      font-weight: 300;
+      min-width: 65px;
+      @media(max-width: 534px) {
+         margin: 8px 0 0 0;
+         color: $sh-grey;
+         font-size: 1.5rem;
+         min-width: 40px;
+         margin-bottom: -5px;
+      }
+      li {
+         @media(max-width: 826px) {
+            min-width: 50px;
+         }
+         @media(max-width: 534px) {
+            min-width: 35px;
+         }
+      }
+   }
+   .container-secondary {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      img {
+         height: 45px;
+      }
+      @media(max-width: 534px) {
+         flex-direction: column;
+      }
+   }
+   .wrapper-secondary {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 46%;
+      margin-top: 35px;
+      @media(max-width: 534px) {
+         width: 100%;
+      }
+      .row.row-main {
+         border-bottom: 1px solid #979797;
+         padding-bottom: 10px;
+         li {
+            text-align: left;
+            &:nth-child(2) {
+               text-align: center;
+            }
+            &:nth-child(3) {
+               text-align: right;
+            }
+         }
+      }
+      .row {
+         border-bottom: 1px solid lighten(#979797, 15);
+         li {
+            min-width: 75px;
+            text-align: center;
+            margin-right: 0;
+            color: $h-grey;
+         }
+      }
+   }
+}
+
+.pipline-wrapper {
+   margin: 45px 0;
+   min-height: 270px;
+   &:last-of-type {
+      min-height: 410px;
+   }
+   h4 {
+      color: $sh-grey;
+      margin-bottom: 25px;
+      margin-top: -13px;
+   }
+   img {
+      width: 47%;
+   }
+   p {
+      margin: 15px 0;
+   }
+   ul {
+      @extend p;
+      position: relative;
+      left: 40px;
+      @media(max-width: 534px) {
+         left: 0;
+      }
+   }
+   @media(max-width: 534px) {
+      img {
+         width: 100%;
+      }
+   }
+}
+
+.fine-print {
+   margin: 15px auto;
+   font-family: 'DesignKOTFL';
+   font-weight: 300;
+   color: $sh-grey;
+   font-size: 1.3rem;
+   padding-left: 15px;
+}
+
+footer {
+   height: 100px;
+   width: 100%;
+   margin-top: 60px;
+   background: #fff;
+   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+   @media(max-width: 970px) {
+      box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+   }
+   @media(max-width: 534px) {
+      box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.33);
+   }
+   p {
+      @extend h4;
+      font-family: 'DesignKOTFM';
+      font-weight: 500;
+      position: absolute;
+      font-size: 1.8rem;
+      right: 109px;
+      bottom: 57px;
+      @media(max-width: 534px) {
+         right: 12%;
+         font-size: 1.5rem;
+         bottom: 65px;
+      }
+   }
+   img {
+      position: absolute;
+      right: 55px;
+      bottom: 83px;
+      @media(max-width: 534px) {
+         right: 5%;
+         width: 200px;
+         bottom: 88.9px;
+      }
+   }
+}
+
+@import 'c3';
+@import 'browser-specific';
